@@ -1,0 +1,117 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.header h1 {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/* Login container */
+.login-container {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.login-container h2 {
+    color: #ffcc00;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #ffaa00;
+}
+
+/* Voting container */
+.voting-container {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.voting-container h2 {
+    color: #ffcc00;
+}
+
+.candidates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.candidate {
+    margin: 15px 0;
+    background-color: #444;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.candidate img {
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.vote-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.vote-button:hover {
+    background-color: #0056b3;
+}

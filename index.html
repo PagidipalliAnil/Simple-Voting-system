@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance University Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with University Name and Logo -->
+    <header class="header">
+        <img src="alliance.jpg" alt="Alliance University Logo" class="logo">
+        <h1>Alliance University Voting System</h1>
+    </header>
+
+    <!-- Login Section -->
+    <div class="login-container">
+        <h2>Login to Vote</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Voting Section -->
+    <div class="voting-container" style="display: none;">
+        <h2>Vote for Your Candidate</h2>
+        <div class="candidates">
+            <div class="candidate">
+                <img src="1.jpg" alt="Candidate 1">
+                <h3>Candidate 1</h3>
+                <button class="vote-button">Vote</button>
+            </div>
+            <div class="candidate">
+                <img src="2.jpg" alt="Candidate 2">
+                <h3>Candidate 2</h3>
+                <button class="vote-button">Vote</button>
+            </div>
+            <div class="candidate">
+                <img src="3.jpg" alt="Candidate 3">
+                <h3>Candidate 3</h3>
+                <button class="vote-button">Vote</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+
+    <script>
+        // Script to toggle display after login
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.querySelector(".login-container").style.display = "none";
+            document.querySelector(".voting-container").style.display = "block";
+        });
+    </script>
+</body>
+</html>
